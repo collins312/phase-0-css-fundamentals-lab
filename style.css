@@ -1,5 +1,52 @@
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+header {
+  text-align: center; /* This centers the h1 and the nav within the header */
+}
+#featured-property figure {
+  text-align: center; /* Ensures contents of figure are centered */
+}
+#featured-property img {
+  display: block;  /* Makes the image a block for margin:auto to work reliably */
+  margin: 0 auto;  /* Centers the image within the figure */
+  max-width: 100%; /* Important for responsiveness */
+  height: auto;
+}
+nav a {
+  padding: 10px; /* 10px padding on all sides, covers left/right */
+  background-color: #6c757d; /* Grey background */
+  color: #fff; /* White text for contrast */
+  display: inline-block; /* Allows padding and background to apply correctly */
+  margin: 5px; /* Adds space between links */
+  /* The `header { text-align: center; }` from point 1 already centers the entire nav block */
+}
+#featured-property figcaption {
+  font-size: 0.85em; /* Shrink font size */
+  text-align: center; /* Center the caption text */
+}
+#featured-property {
+  width: 900px; /* Set width for the overall section as per image width comment */
+  max-width: 95%; /* Make section responsive */
+  margin: 20px auto; /* Center the section itself */
+}
+#featured-property p {
+  width: 800px; /* Hard width for paragraphs */
+  max-width: 90%; /* Make paragraphs responsive */
+  margin: 15px auto; /* Centers the paragraph blocks and provides vertical space */
+  text-align: center; /* Centers the text WITHIN the paragraphs */
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+#details {
+  overflow: hidden; /* Important for containing floats */
+  /* ... other styling like background color, padding, etc. ... */
+}
+#details > div {
+  float: left; /* Makes each div float horizontally */
+  /* ... other styling like width, text-align, etc. ... */
+}
+#details > div {
+  float: left; /* (from previous point) */
+  width: 25%; /* Each div takes 25% of the width */
+  background-color: #ff0000; /* Red background (consistent with overall #details background) */
+  text-align: center; /* Center text within each div */
+  box-sizing: border-box; /* Ensures padding is included in the 25% width */
+  padding: 0 10px; /* Add some internal padding to avoid text hitting edges */
 }
